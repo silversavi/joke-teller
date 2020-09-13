@@ -1,8 +1,11 @@
 // Get Keys
-
-var API_KEY = secrets.API_KEY
-
-//var API_KEY = config.API_KEY
+if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+    alert("It's a local server!");
+    var API_KEY = config.API_KEY;
+} else {
+    var API_KEY = config.API_KEY;
+    console.log("else") 
+}
 
 const button = document.getElementById('button');
 const replayButton = document.getElementById('replayButton');
