@@ -9,6 +9,8 @@ if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
     console.log("else") 
 }
 
+const randomHash = '68458b1213274589aef6fd4c121e213a'
+
 const button = document.getElementById('button');
 const replayButton = document.getElementById('replayButton');
 const audioElement = document.getElementById('audio');
@@ -33,7 +35,7 @@ function replayJoke() {
 // Passin Joke to VoiceRSS API
 function tellMe(joke) {
     VoiceRSS.speech({
-        key: API_KEY,
+        key: randomHash,
         src: joke,
         hl: 'en-us',
         v: 'Linda',
