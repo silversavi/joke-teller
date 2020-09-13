@@ -1,13 +1,13 @@
 // Get Keys
-let API_KEY 
+// let API_KEY 
 
-if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
-    alert("It's a local server!");
-    API_KEY = config.API_KEY;
-} else {
-    API_KEY = config.API_KEY;
-    console.log("else") 
-}
+// if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+//     alert("It's a local server!");
+//     API_KEY = config.API_KEY;
+// } else {
+//     API_KEY = config.API_KEY;
+//     console.log("else") 
+// }
 
 const randomHash = '68458b1213274589aef6fd4c121e213a'
 
