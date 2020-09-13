@@ -1,6 +1,13 @@
 // Get Keys
 var API_KEY = config.API_KEY;
 
+if (API_KEY) {
+    continue
+} else {
+    API_KEY = secrets.API_KEY
+}
+
+
 const button = document.getElementById('button');
 const replayButton = document.getElementById('replayButton');
 const audioElement = document.getElementById('audio');
